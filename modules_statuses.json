@@ -1,0 +1,9 @@
+{
+    "Category": true,
+    "Product": true,
+    "User": true,
+    "Order": true,
+    "Customer": true,
+    "Acl": true,
+    "Api": true
+}

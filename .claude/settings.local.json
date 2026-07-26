@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(php -l Modules/Product/database/migrations/2026_07_26_094940_add_slug_to_products_table.php)",
+      "Bash(php -l Modules/Product/app/Models/Product.php)",
+      "Bash(php -l Modules/Product/app/Http/Controllers/ProductController.php)",
+      "Bash(php artisan *)"
+    ]
+  }
+}

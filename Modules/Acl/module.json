@@ -1,0 +1,11 @@
+{
+    "name": "Acl",
+    "alias": "acl",
+    "description": "Roles and permissions (Spatie laravel-permission) for admin-panel access control.",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Acl\\Providers\\AclServiceProvider"
+    ],
+    "files": []
+}

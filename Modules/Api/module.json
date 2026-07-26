@@ -1,0 +1,15 @@
+{
+    "name": "Api",
+    "alias": "api",
+    "description": "Common customer-facing REST API: auth (Sanctum), product catalog, and order placement.",
+    "keywords": [],
+    "priority": 4,
+    "requires": [
+        "Product",
+        "Order"
+    ],
+    "providers": [
+        "Modules\\Api\\Providers\\ApiServiceProvider"
+    ],
+    "files": []
+}

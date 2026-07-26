@@ -1,0 +1,15 @@
+{
+    "name": "Customer",
+    "alias": "customer",
+    "description": "Lost customer detection, employee assignment, and re-engagement. Depends on the User and Order modules.",
+    "keywords": [],
+    "priority": 3,
+    "requires": [
+        "User",
+        "Order"
+    ],
+    "providers": [
+        "Modules\\Customer\\Providers\\CustomerServiceProvider"
+    ],
+    "files": []
+}

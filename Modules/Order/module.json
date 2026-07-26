@@ -1,0 +1,14 @@
+{
+    "name": "Order",
+    "alias": "order",
+    "description": "Customer orders and purchase history. Depends on the Product module.",
+    "keywords": [],
+    "priority": 2,
+    "requires": [
+        "Product"
+    ],
+    "providers": [
+        "Modules\\Order\\Providers\\OrderServiceProvider"
+    ],
+    "files": []
+}

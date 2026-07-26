@@ -1,0 +1,14 @@
+{
+    "name": "Product",
+    "alias": "product",
+    "description": "Product catalog CRUD. Depends on the Category module.",
+    "keywords": [],
+    "priority": 1,
+    "requires": [
+        "Category"
+    ],
+    "providers": [
+        "Modules\\Product\\Providers\\ProductServiceProvider"
+    ],
+    "files": []
+}
