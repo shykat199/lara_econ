@@ -1,0 +1,1 @@
+(function(){var e=GLightbox({selector:".glightbox"});e.on("slide_changed",({prev:o,current:l})=>{console.log("Prev slide",o),console.log("Current slide",l)}),new Swiper(".swiper-related-jobs",{navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},loop:!0,autoplay:{delay:1500,disableOnInteraction:!1}})})();
