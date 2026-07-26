@@ -1,11 +1,11 @@
 <?php
 
-namespace Modules\Customer\Database\Seeders;
+namespace Modules\User\Database\Seeders;
 
 use App\Models\User;
 use Illuminate\Database\Seeder;
 
-class CustomerDatabaseSeeder extends Seeder
+class EmployeeSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -13,7 +13,7 @@ class CustomerDatabaseSeeder extends Seeder
     public function run(): void
     {
         User::factory()->count(10)->create([
-            'role' => 'customer',
+            'role' => 'employee',
             'status' => 'active',
         ]);
     }

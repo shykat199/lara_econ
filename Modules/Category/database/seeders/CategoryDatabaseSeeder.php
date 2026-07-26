@@ -3,6 +3,8 @@
 namespace Modules\Category\Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Str;
+use Modules\Category\Models\Category;
 
 class CategoryDatabaseSeeder extends Seeder
 {
@@ -11,6 +13,13 @@ class CategoryDatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // $this->call([]);
+        $names = ['Electronics', 'Home & Kitchen', 'Apparel', 'Sports & Outdoors', 'Books'];
+
+        foreach ($names as $name) {
+            Category::firstOrCreate(
+                ['slug' => Str::slug($name)],
+                ['name' => $name]
+            );
+        }
     }
 }

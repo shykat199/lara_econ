@@ -194,7 +194,11 @@ php artisan db:seed
 
 This seeds, in order:
 1. **Acl** — creates the `admin`/`employee`/`customer` Spatie roles and the full permission set (admin gets everything; employee/customer get a limited default set)
-2. **User** — creates the first admin account via `AdminSeeder`
+2. **User** — creates the first admin account via `AdminSeeder`, plus 10 demo employee accounts via `EmployeeSeeder`
+3. **Category** — 5 demo categories (Electronics, Home & Kitchen, Apparel, Sports & Outdoors, Books)
+4. **Product** — 10 demo products spread across those categories
+5. **Customer** — 10 demo customer accounts via `CustomerDatabaseSeeder`
+6. **Order** — 10 demo orders ("sales") with 1–3 line items each ("transactions"), placed through `OrderService` (so stock, purchase stats, and invoicing behave exactly like a real order) with timestamps randomized over the last 45 days
 
 Check `Modules/User/database/seeders/AdminSeeder.php` for the seeded admin email/password (edit it before seeding if you want different credentials).
 
